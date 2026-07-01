@@ -1,0 +1,74 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:content-box;
+}
+body{
+    background-image: url(../front.png);
+    background-size:100vw 99.9vh;
+    background-position: center top;
+    font-family:'Times New Roman';
+    font-size:14pt;
+    font-weight:bold;
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+    color:whitesmoke;
+}
+.menu-bar ul li 
+{
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:white;
+    text-shadow: 3px 3px 3px black;
+}
+.active, .menu-bar ul li:hover
+{
+    background-color:grey;
+    border-radius: 10px;
+}
+.sub-menu-1
+{
+    display:none; 
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display:block;
+    position:absolute;
+    background-color:whitesmoke;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display:block;
+    margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom:1px dotted black;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.sub-menu-1 ul li a{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:darkblue;
+}

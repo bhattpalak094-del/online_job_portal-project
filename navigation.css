@@ -1,0 +1,107 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    font-family:'Times New Roman', serif;
+    font-size:13pt;
+    overflow-x:hidden;
+}
+
+/* ===== BACKGROUND ===== */
+.bg-layer{
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background-image:url(../image4.jpeg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    z-index:-2;
+    filter:blur(8px);
+    transform:scale(1.05);
+}
+
+.bg-overlay{
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background-color:rgba(248,241,241,0.2);
+    z-index:-1;
+}
+
+/* ===== NAVIGATION ===== */
+.menu-bar{
+    background-color:rgba(0,0,0,0.5);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    text-align:center;
+    padding:5px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+}
+
+.menu-bar ul li{
+    width:180px;
+    margin:15px;
+    padding:12px;
+    position:relative;
+}
+
+.menu-bar ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    text-shadow:1px 1px 2px black;
+}
+
+.menu-bar ul li:hover{
+    background-color:rgba(255,255,255,0.2);
+    border-radius:4px;
+}
+
+/* ===== DROPDOWN ===== */
+.sub-menu-1{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    background-color:#E0E5E5;
+    padding:5px 0;
+}
+
+.sub-menu-1 ul li{
+    width:160px;
+    margin:0;
+    padding:10px;
+}
+
+.sub-menu-1 ul li a{
+    color:black;
+    text-shadow:none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .menu-bar ul{
+        flex-direction:column;
+    }
+    .menu-bar ul li{
+        width:100%;
+        margin:5px 0;
+    }
+}

@@ -1,0 +1,44 @@
+.profile_container{
+    margin-left: 25%;
+    width: 70%;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.profile-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.action-btn button{
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #2554C7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.action-btn button:hover{
+    background-color: #2F539B;
+}
+.profile-section .section{
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+.section h3{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
